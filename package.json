@@ -1,0 +1,30 @@
+{
+  "name": "cursocoderhouse",
+  "version": "1.0.0",
+  "description": "Desafio integrador clase 11",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     	"build-css": "node-sass --include-path scss css/style1.scss css/style1.css",
+		"watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aicilam/cursocoderhouse.git"
+  },
+  "keywords": [
+    "desafio",
+    "coderhouse",
+    "clase11"
+  ],
+  "author": "Alicia Maiuri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aicilam/cursocoderhouse/issues"
+  },
+  "homepage": "https://github.com/aicilam/cursocoderhouse#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.2"
+  }
+}

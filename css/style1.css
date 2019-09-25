@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/*Declaracion variables*/
+/* familia fuente */
+/* familia fuente */
+/* tamaño fuente */
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+  padding: 0;
+  margin: 0; }
+
+/*Caracteristicas: cuerpo, header y footer*/
+body {
+  font-size: 14px;
+  background-color: #a3bd52;
+  font-family: "Lexend Deca", sans-serif;
+  /* familia fuente */
+  width: 1024px;
+  height: auto; }
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  width: 1024px;
+  margin-left: 25px;
+  margin-right: 25px;
+  position: fixed;
+  z-index: 300; }
+
+footer {
+  color: #ffffff;
+  width: 1024px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: static;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 300;
+  background-color: #D6842C; }
+
+/*caracteristicas elementos tabla*/
+table.caracteristicas {
+  border-style: solid;
+  background-color: #28a7281f;
+  border-color: gray;
+  text-align: center;
+  font-size: 12px;
+  width: auto; }
+
+table.caracteristicas tbody {
+  width: 95%;
+  padding: 5px;
+  margin: 10px;
+  height: auto;
+  border-width: 1px;
+  border-spacing: 2px;
+  border-style: solid;
+  border-color: gray;
+  background-color: #28a7281f;
+  margin: 25px; }
+
+table.caracteristicas td {
+  border-width: 1px;
+  padding: 5px;
+  border-style: solid;
+  border-color: gray;
+  background-color: #28a7281f;
+  margin: 5px; }
+
+table.caracteristicas tr {
+  width: 500px;
+  padding: 5px;
+  border-width: 1px;
+  padding: 5px;
+  border-style: solid;
+  border-color: gray;
+  background-color: #28a7281f;
+  margin: 15px; }
+
+table.caracteristicas th {
+  width: 500px;
+  padding: 5px;
+  border-width: 1px;
+  padding: 5px;
+  border-style: solid;
+  border-color: gray;
+  margin: auto;
+  text-align: center;
+  background-color: #28a7281f; }
+
+/* Barra de navegación */
+.navbar {
+  overflow: hidden;
+  background-color: #D6842C;
+  font-family: "Lexend Deca", sans-serif, sans-serif;
+  /* familia fuente */ }
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+.subnav {
+  float: left;
+  overflow: hidden; }
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; }
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #18690F; }
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #3ead47;
+  width: 100%;
+  z-index: 1; }
+
+.subnav-content-vertical {
+  display: none;
+  position: absolute;
+  background-color: #3ead47; }
+
+.subnav-content a, .subnav-content-vertical a {
+  float: left;
+  color: white;
+  text-decoration: none; }
+
+.subnav-content a:hover, .subnav-content-vertical a:hover {
+  background-color: #eee;
+  color: black; }
+
+.subnav:hover .subnav-content, .subnav:hover .subnav-content-vertical {
+  display: block; }
+
+/*Efectos imagenes*/
+.transition {
+  width: 100px;
+  height: 100px;
+  background: #5FA71F;
+  transition: width 2s, height 2s, margin 2s;
+  margin: 50px auto 0; }
+
+.transition:hover {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto; }
+
+.imagenal40 {
+  transform: scale(0.45, 0.45);
+  border-radius: 50%; }
+
+.imagen2 {
+  transform: rotate(20deg) scale(0.45, 0.45); }
+
+.imagen3 {
+  transform: rotate(-20deg) scale(0.45, 0.45); }
+
+/*Agregamos margenes inferiores a los parrafos*/
+p {
+  margin-bottom: 20px; }
+
+/*ul {
+  list-style: none;
+}
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda 
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float 
+  }
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  }
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding 
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  }
+nav ul li:hover {
+  background: #3ead47;
+  }*/
+form {
+  margin: 15 15 15 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  padding-left: 65px;
+  padding-bottom: 25px;
+  background-color: #28a7281f;
+  margin-top: 15px;
+  float: left;
+  clear: right; }
+
+.contenido {
+  width: 100%;
+  background-image: url(imagenes/fondo.png); }
+
+.wrapper {
+  width: 95%;
+  margin: auto;
+  overflow: hidden; }
+
+.titulosh1 {
+  background: #5FA71F;
+  color: #ffffff;
+  font-size: 24px;
+  /* tamaño fuente */
+  text-align: center;
+  /* texto centrado */
+  font-weight: bold;
+  /* texto negrita */
+  font-family: "Lexend Deca", sans-serif;
+  /* familia fuente */
+  line-height: 35px;
+  /* espaciado entre líneas */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; }
+
+.fondomenu {
+  background-color: #5FA71F; }
+
+.titulosh2 {
+  color: #ffffff;
+  /* color fuente*/
+  font-size: 20px;
+  /* tamaño fuente */
+  font-weight: bold;
+  /* texto negrita */
+  font-style: italic;
+  /* texto italica*/
+  font-family: "Lexend Deca", sans-serif, sans-serif;
+  /* familia fuente */
+  line-height: 5px;
+  /* espaciado entre líneas */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px 5px 0px 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
+.titulosh3 {
+  color: #ffffff;
+  /* color fuente*/
+  font-size: 16px;
+  /* tamaño fuente */
+  font-weight: bold;
+  /* texto negrita */
+  font-style: italic;
+  /* texto italica*/
+  font-family: "Lexend Deca", sans-serif;
+  /* familia fuente */
+  line-height: 5px;
+  /* espaciado entre líneas */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
+.parrafos {
+  color: #272729;
+  font-size: 12px;
+  /* tamaño fuente */
+  text-align: justify;
+  /* alineación texto */
+  letter-spacing: 1px;
+  /* espaciado entre letras */
+  line-height: 15px;
+  /* espaciado entre líneas */
+  font-family: "Lexend Deca", sans-serif;
+  /* familia fuente */ }
+
+/* Contenedor central con dos columnas*/
+.contenedor {
+  background-color: #28a7281f;
+  margin: auto;
+  text-align: center;
+  width: 95%px;
+  align-content: center;
+  height: auto;
+  clear: left; }
+
+.izquierda {
+  background-color: white;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  float: left; }
+
+.derecha {
+  background-color: white;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  clear: right; }
